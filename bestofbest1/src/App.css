@@ -1,0 +1,201 @@
+.App{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 100px 1fr;
+  background-image: url(./img/back.png);
+  justify-content: center;
+  
+}
+.title{
+font-size: 36px;
+color: #ffffff;
+font-family: "Exo2.0";
+text-align: center;
+
+}
+.carts {
+  display: flex; 
+} 
+
+.cart{
+  display: grid;
+  grid-template-rows: 10px 40px 50px 30px 15px 15px 310px 30px;
+  padding-right: 80px;
+}
+
+
+
+.titles{
+font-size: 16px;
+color: #666666;
+font-family: "Trebuchet MS";
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 24px;
+}
+
+.name{
+font-size: 48px;
+color: #000000;
+font-family: "Trebuchet MS";
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+margin-right: 24px;
+}
+.contant{
+  font-size: 24px;
+  color: #000000;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 46px;
+}
+.quantity{
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  margin-left: 46px;
+  margin-top: 10px;
+  
+}
+.prize{
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  margin-left: 46px;
+  margin-top: 10px;
+  width:140px
+
+}
+.weight{
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  align-self: end;
+  font-size: 42px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "Trebuchet MS";
+  margin-right: 47px;
+  margin-bottom: 13px;
+  
+}
+.weight1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+.weight2 {
+  margin-left:20px;
+  font-size: 22px;
+  display: flex;
+ justify-content: center;
+ margin-right: 15px;
+
+}
+.comment{
+  width: 340px;
+padding-top: 5px;
+font-size: 13px;
+line-height: 16px;
+color: #ffffff;
+font-family: "Trebuchet MS";
+text-align: center;
+box-shadow: 0.5px 0.866px 1px #000000;
+}
+
+.buy{
+  color: blue;
+  border-bottom: 1px dotted blue ;
+  cursor: pointer;
+}
+.noBuy{
+  color:gold;
+}
+img{
+  cursor: pointer;
+}
+
+@media (max-width:480px) {
+  .App{
+    display: grid;
+    width:400px;
+    height: 1600px;
+    background-image: url(./img/back.png);
+    grid-template-rows: 60px 1fr 1fr 1fr;
+  }
+ 
+  .title{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Exo2.0";
+    text-align: center;
+    margin-left:10px
+    
+      }
+  .carts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-bottom: 20px;
+
+  } 
+
+  .cart { 
+    display: grid;
+    grid-template-rows: 10px 40px 50px 30px 15px 15px 310px 30px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+  
+}
+
+@media (max-width: 1024px) {
+  .App{
+    display: grid;
+    width:auto;
+    height: 100vh;
+    background-image: url(./img/back.png);
+    grid-template-rows: 60px 1fr 1fr 1fr;
+  }
+ 
+  .title{
+    padding-top: 25px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Exo2.0";
+    text-align: center;
+    margin-left:10px
+    
+      }
+  .carts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    align-self: center;
+  } 
+  
+
+  .cart { 
+    display: grid;
+    grid-template-rows: 10px 40px 50px 30px 15px 15px 310px 30px;
+    padding-bottom: 15px;
+    margin-top:20px
+}
+  
+}
